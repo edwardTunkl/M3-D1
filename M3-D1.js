@@ -105,64 +105,76 @@ if(testi[0]===1 || testi[0]===3 || testi[1]===1 || testi[1]===3){
     console.log("neither...nor")
 }
 }
-console.log(whetherOneOrThree())
-/*
+// console.log(whetherOneOrThree())
 
-10)
 
-Create a function to test whether an array of integers of length 2 does not contain 1 or a 3
+// 10)
+// Create a function to test whether an array of integers of length 2 does not contain 1 or a 3
 
-11)
 
-Create a function to find the longest string from a given array of strings.
+// 11)
 
-12)
+// Create a function to find the longest string from a given array of strings.
 
-Create a function to find the types of a given angle.
+const longArray = ["hello", "how", "are", "youuuuuu?", 2, true]
 
-Types of angles:
-    Acute angle: An angle between 0 and 90 degrees.
-    Right angle: An 90 degree angle.
-    btuse angle: An angle between 90 and 180 degrees.
-    Straight angle: A 180 degree angle.
+function longestString(){
+    let longest = longArray[0].length
+     for(let i=1; i<longArray.length;i++){
+         if(longArray[i].length>=longest){
+            longest=longArray[i].length
+         }
+     } 
+     return longest
+ }
+ console.log(longestString())
+// 12)
 
-13)
+// Create a function to find the types of a given angle.
 
-Create a function to find the index of the greatest element of a given array of integers
+// Types of angles:
+//     Acute angle: An angle between 0 and 90 degrees.
+//     Right angle: An 90 degree angle.
+//     btuse angle: An angle between 90 and 180 degrees.
+//     Straight angle: A 180 degree angle.
 
-14)
+// 13)
 
-Create a function to get the largest even number from an array of integers.
+// Create a function to find the index of the greatest element of a given array of integers
 
-16)
+// 14)
 
-Create a function to check from two given integers, whether one is positive and another one is negative.
+// Create a function to get the largest even number from an array of integers.
 
-17)
+// 16)
 
-Create a function to create new string with first 3 characters are in lower case and the others in upper case. If the string length is less than 3 convert all the characters in upper case. 
+// Create a function to check from two given integers, whether one is positive and another one is negative.
 
-18)
+// 17)
 
-Create a function to calculate the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.
+// Create a function to create new string with first 3 characters are in lower case and the others in upper case. If the string length is less than 3 convert all the characters in upper case. 
 
-19)
+// 18)
 
-Create a function to convert a number to a string, the contents of which depend on the number's factors. Follow next example:
+// Create a function to calculate the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.
 
-If the number has 3 as a factor, output 'Diego'.
-If the number has 5 as a factor, output 'Riccardo'.
-If the number has 7 as a factor, output 'Stefano'.
-If the number does not have 3, 5, or 7 as a factor, just pass the number's digits straight through.
-Examples
-28's factors are 1, 2, 4, 7, 14, 28.
-this would be a simple "Stefano".
-30's factors are 1, 2, 3, 5, 6, 10, 15, 30.
-this would be a "DiegoRiccardo".
-34 has four factors: 1, 2, 17, and 34.
-this would be "34".
+// 19)
 
-20)
-Create a function that given a phrase returns its acronym, like British Broadcasting Corporation returns BBC
+// Create a function to convert a number to a string, the contents of which depend on the number's factors. Follow next example:
 
-*/
+// If the number has 3 as a factor, output 'Diego'.
+// If the number has 5 as a factor, output 'Riccardo'.
+// If the number has 7 as a factor, output 'Stefano'.
+// If the number does not have 3, 5, or 7 as a factor, just pass the number's digits straight through.
+// Examples
+// 28's factors are 1, 2, 4, 7, 14, 28.
+// this would be a simple "Stefano".
+// 30's factors are 1, 2, 3, 5, 6, 10, 15, 30.
+// this would be a "DiegoRiccardo".
+// 34 has four factors: 1, 2, 17, and 34.
+// this would be "34".
+
+// 20)
+// Create a function that given a phrase returns its acronym, like British Broadcasting Corporation returns BBC
+
+
