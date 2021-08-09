@@ -30,18 +30,35 @@ function removeChar(str,x){
     let removedString = newString.splice(x-1,1)
     return newString.join("")
 }
-console.log(removeChar("Hellooooo",2))
+// console.log(removeChar("Hellooooo",2))
 /*
 
 4)
  Create a function to find the largest of three given integers.
 */
-
+function largestOf(a,b,c){
+    // if(a>b && a>c && b>c){
+    //     return console.log(`${a} is greater than ${b} is greater than ${c}`)
+    // } else if(a>b && a>c && c>b) {
+    //     return console.log(`${a} is greater than ${c} is greater than ${b}`)
+    // } else if(b>a && a>c && c>b) {
+    //     return console.log(`${a} is greater than ${c} is greater than ${b}`)
+    // }
+    console.log(`${Math.max(a,b,c)} is the biggest number`)
+}
+// console.log(largestOf(100,4,3))
 /*
 5)
 Create a function to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
 */
-
+function withinRange(a,b){
+    if ((a>= 40 && a<=60 && b>=40 && b<= 60)||(a>=70 && a<=100 && b>=70 && b<=100)){
+        console.log("The numbers are within the given ranges")
+    } else {
+        console.log("The numbers are not within the given ranges")
+    }
+}
+console.log(withinRange(45,42))
 /*
 6) 
 
