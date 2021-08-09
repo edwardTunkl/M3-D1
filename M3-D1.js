@@ -79,18 +79,33 @@ function cityName(str){
         console.log(str)
     }
 }
-console.log(cityName("Berlin"))
+// console.log(cityName("Berlin"))
 /*
 8)
 Create a function to calculate the sum of three elements of a given array of integers of length 3.
 */
+const testArray =[3,6,93]
 
+function sumOfThree(){
+    let sum = testArray[0]+testArray[1]+testArray[2]
+   return sum
+}
+// console.log(sumOfThree())
 /*
 
 9)
 Create a function to test whether an array of integers of length 2 contains 1 or a 3. 
 */
+const testi = [1,453561]
 
+function whetherOneOrThree(){
+if(testi[0]===1 || testi[0]===3 || testi[1]===1 || testi[1]===3){
+    console.log("positive!")
+} else {
+    console.log("neither...nor")
+}
+}
+console.log(whetherOneOrThree())
 /*
 
 10)
