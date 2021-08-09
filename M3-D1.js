@@ -58,19 +58,28 @@ function withinRange(a,b){
         console.log("The numbers are not within the given ranges")
     }
 }
-console.log(withinRange(45,42))
+// console.log(withinRange(45,42))
 /*
 6) 
 
 Create a function to create a new string of specified copies (positive number) of a given string.
 */
-
+function newString(str,x){
+    let newOne = str.repeat(x)
+    return newOne
+}
+// console.log(newString("hey",4))
 /*
 
 7)
 Create a function to display the city name if the string begins with "Los" or "New" otherwise return blank.
 */
-
+function cityName(str){
+    if((str.startsWith("Los"))||(str.startsWith("New"))){
+        console.log(str)
+    }
+}
+console.log(cityName("Berlin"))
 /*
 8)
 Create a function to calculate the sum of three elements of a given array of integers of length 3.
