@@ -10,17 +10,27 @@ function calSum(a,b){
        return a+b
     }
 }
-console.log(calSum(3,3))
+// console.log(calSum(3,3))
+
 /*
 2)
 Create a function to check two given numbers and return true if one of the number is 50 or if their sum is 50.
 */
 
+function checkTrue(a,b){
+    return (a === 50 || b===50 || (a+b)===50 ? true : "") 
+}
+// console.log(checkTrue(40,0))
 /*
 3)
 Create a function to remove a character at the specified position of a given string and return the new string.
 */
-
+function removeChar(str,x){
+    let newString = str.split("")
+    let removedString = newString.splice(x-1,1)
+    return newString.join("")
+}
+console.log(removeChar("Hellooooo",2))
 /*
 
 4)
