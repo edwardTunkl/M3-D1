@@ -4,13 +4,13 @@
 Create a function to calculate the sum of the two given integers. If the two values are same, then returns triple their sum.
 */
 function calSum(a,b){
-    if(a==b){
+    if(a===b){
        return (a+b)*3
     } else {
        return a+b
     }
 }
-// console.log(calSum(3,3))
+console.log(calSum(3,3))
 
 /*
 2)
@@ -127,7 +127,7 @@ function longestString(){
      } 
      return longest
  }
- console.log(longestString())
+// console.log(longestString())
 // 12)
 
 // Create a function to find the types of a given angle.
@@ -138,6 +138,20 @@ function longestString(){
 //     btuse angle: An angle between 90 and 180 degrees.
 //     Straight angle: A 180 degree angle.
 
+function typeOfAngle(x){
+    switch(x){
+        case 0<x<90 : console.log("Acute angle");
+        break;
+        case x===90 : console.log("Right angle");
+        break;
+        case 90<x<180 : console.log("Obtuse angle");
+        break;
+        case x===180 : console.log("Straight angle");
+        break;
+        default: console.log("Reflex angle");
+    }
+}
+console.log(typeOfAngle(180))
 // 13)
 
 // Create a function to find the index of the greatest element of a given array of integers
